@@ -1,0 +1,14 @@
+*.ipynb_checkpoints
+*.DS_Store
+*__pycache__*
+
+data/dataset/*
+data/bandpower_SEED_de.npy
+data/bandpower_SEED_de_normalized_per_participant.npy
+data/bandpower_SEED_multitaper.npy
+data/bandpower_SEED_multitaper_normalized_per_participant.npy
+data/bandpower_SEED_welch.npy
+data/bandpower_SEED_welch_normalized_per_participant.npy
+data/emotion_labels.npy
+
+output/*
