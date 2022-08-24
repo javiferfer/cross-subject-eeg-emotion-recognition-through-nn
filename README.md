@@ -1,4 +1,4 @@
-# Cross-subject-EEG-emotion-recognition-through-NN
+# Cross subject EEG emotion recognition through NN
 This code corresponds to the work "Cross-Subject EEG-Based Emotion Recognition Through Neural Networks With Stratified Normalization" submitted to Frontiers in Neuroscience.
 
 The structure is as follows:
