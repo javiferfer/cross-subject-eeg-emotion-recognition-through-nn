@@ -9,5 +9,19 @@ The structure is as follows:
 
 To download the [SEED dataset](https://bcmi.sjtu.edu.cn/home/seed/seed.html), please follow the next instructions [instructions](https://bcmi.sjtu.edu.cn/home/seed/downloads.html#seed-access-anchor).
 
-## Contact email:
+# How To
+
+## Installing dependencies
+Use Python 3.9 and install dependencies with venv:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+## Creating features
+
+After downloading the data, place all the preprocessing files `mat` files under `data/dataset/SEED/Preprocessed_EEG`.
+
+# Contact email:
 Javier Fdez: javier.f3rnand3z@gmail.com
