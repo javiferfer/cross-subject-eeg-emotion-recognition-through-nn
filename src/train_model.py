@@ -1,17 +1,29 @@
 import torch
 import torch.nn.functional as F
-import time
 
 
-def train_model_cross_subject(model, train_x, test_x, train_y, test_y, train_i, test_i, no_epochs, normalize):
-    tr_err = []
+def train_model_cross_subject(
+    model,
+    train_x,
+    test_x,
+    train_y,
+    test_y,
+    train_i,
+    test_i,
+    no_epochs,
+    normalize,
+):
+    tr_err, ts_err = [], []
     ts_err = []
 
-    tr_acc = []
-    ts_acc = []
+    tr_acc, ts_acc = [], []
 
     optim = torch.optim.Adam(model.parameters(), lr=5e-3)
-    scheduler = torch.optim.lr_scheduler.MultiStepLR(optim, milestones=[40], gamma=0.2)
+    scheduler = torch.optim.lr_scheduler.MultiStepLR(
+        optim,
+        milestones=[40],
+        gamma=0.2,
+    )
 
     for epoch in range(no_epochs):
 

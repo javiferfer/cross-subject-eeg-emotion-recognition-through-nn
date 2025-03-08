@@ -13,7 +13,7 @@ def batch_norm(x):
     mu_s = torch.cat(mu_s)
     std_s = torch.cat(std_s)
 
-    return (x-mu_s)/(std_s+1e-8)
+    return (x - mu_s) / (std_s + 1e-8)
 
 
 class net_batch_norm(nn.Module):

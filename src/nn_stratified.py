@@ -10,7 +10,7 @@ def stratified_norm(x, s):
     ns = torch.unique(s)
     maxs = torch.max(ns)
 
-    for i in range(maxs.cpu().detach().item()+1):
+    for i in range(maxs.cpu().detach().item() + 1):
         if i in ns:
             mu_s.append(torch.mean(x[s == i], 0).unsqueeze(0))
             std_s.append(torch.std(x[s == i], 0).unsqueeze(0))
@@ -23,7 +23,7 @@ def stratified_norm(x, s):
     mu = mu_s[s]
     std = std_s[s]
 
-    return (x-mu)/(std+1e-8)
+    return (x - mu) / (std + 1e-8)
 
 
 class net_stratified_norm(nn.Module):
