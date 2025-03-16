@@ -26,7 +26,7 @@ def stratified_norm(x, s):
     return (x - mu) / (std + 1e-8)
 
 
-class net_stratified_norm(nn.Module):
+class NetStratifiedNorm(nn.Module):
     def __init__(self):
         super().__init__()
 
