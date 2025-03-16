@@ -26,6 +26,10 @@ matplotlib-inline==0.1.7
 mne==1.8.0
 nest-asyncio==1.6.0
 numpy==2.0.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cudnn-cu11==8.5.0.96
 packaging==24.2
 parso==0.8.4
 pexpect==4.9.0
@@ -44,6 +48,7 @@ requests==2.32.3
 scipy==1.13.1
 six==1.17.0
 stack-data==0.6.3
+torch==1.13.0
 tornado==6.4.2
 tqdm==4.67.1
 traitlets==5.14.3
