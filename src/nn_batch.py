@@ -16,7 +16,7 @@ def batch_norm(x):
     return (x - mu_s) / (std_s + 1e-8)
 
 
-class net_batch_norm(nn.Module):
+class NetBatchNorm(nn.Module):
     def __init__(self):
         super().__init__()
 
